@@ -1,50 +1,52 @@
+@import "css-reset.css";
+
 @font-face {
     font-family: 'Outfit';
 url('Outfit/Outfit-VariableFont_wght.ttf')  format('truetype'),
 }
 
 body {
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
     background-color: hsl(212, 45%, 89%);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vh;
+    min-height: 100svh;
+    padding: 16px;
 }
 
 .container {
     background-color: white;
     border-radius: 20px;
-    width: 320px;
-    height: 499px;
+    width: 25rem;
+    height: 35rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    max-width: 20rem;
+    padding: 16px;
 }
 
 
 .image {
-    width: 288px;
-    height: 288px;
-    margin-top: 16px;
+    display: block;
+    width: 20rem;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 16px;
     border-radius: 10px;
 }
 
 .text-headline {
-    font-family: 'Outfit', sans-serif;
-    /*font-size: 15px;*/
     font-weight: 700;
     color: hsl(218, 44%, 22%);
-    text-align: center;
     padding: 0 16px;
 }
 
 .text-subtext {
-    font-family: 'Outfit', sans-serif;
     font-weight: 500;
     color: hsl(216, 15%, 48%);
-    text-align: center;
     padding: 0 16px;
 }
